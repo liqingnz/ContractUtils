@@ -13,4 +13,8 @@ contract UpgradeableProxy is TransparentUpgradeableProxy {
     function proxyAdmin() external view returns (address) {
         return _proxyAdmin();
     }
+
+    function implementation() external view returns (address) {
+        return _implementation();
+    }
 }
